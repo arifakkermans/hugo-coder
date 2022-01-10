@@ -7,6 +7,9 @@
     <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
     <meta name="color-scheme" content="light dark">
 
+    {{ template "_internal/google_analytics.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
+  
     {{ if .Site.Params.csp }}
       {{ partial "csp.html" . }}
     {{ end }}
